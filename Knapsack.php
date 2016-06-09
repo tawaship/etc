@@ -101,6 +101,14 @@
 		//
 		/////////////////////////////////////////////////////////////////////////
 		
+		/**
+		 * 最大の価値となるKnapsackItemsの組み合わせを求めます(本体)
+		 * 
+		 * @param int $i     参照するアイテム配列index
+		 * @param int $j     ナップサックに入れたアイテムの総容量
+		 * @param int $count ナップサックに入れたアイテムの個数
+		 * @return array
+		 */
 		private function calc($i, $j, $count = 0) {
 			// ものが尽きた
 			if ($i == $this->_itemCount)
